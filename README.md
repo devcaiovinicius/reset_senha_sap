@@ -2,7 +2,7 @@
 
 ## 📌 Objetivo
 
-Visando reduzir o esforço manual dos chamados n1 de solicitações de reset de senha de usuários SAP, script será valido até o momento que realizarmos a implementação da melhoria da inserção do login via SSO no SAP GUI.
+Visando reduzir o esforço manual dos chamados n1 de solicitações de reset de senha de usuários SAP, script será valido até o momento que realizarmos a implementação da melhoria de login via SSO no SAP GUI.
 
 ## ⚙️ Funcionalidades
 
