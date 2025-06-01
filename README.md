@@ -1,4 +1,4 @@
-## 🔐 Script em Python para reset de senha individual/em massa - SAP
+## 🔐 Script em Python para Reset de Senha Individual/em Massa - SAP
 
 ## 📌 Objetivo
 
