@@ -51,26 +51,27 @@ def password_reset_mass(session, sap_user, sap_password):
     
 ### Menu de Validação
 while True:
-    print("************************************")
-    print("* Selecione uma das opções abaixo: *")
-    print("* [1] Reset Senha Unitária [SU01]  *")
-    print("* [2] Reset Senha em Massa [SU10]  *")
-    print("************************************")
-    menu_option = input(": ")
+    print("====================Menu Reset Senhas====================")
+    print("=============Selecione uma das opções abaixo=============")
+    print("=============[1] Reset Senha Unitária [SU01]=============")
+    print("=============[2] Reset Senha em Massa [SU10]=============")
+    print("=========================================================")
+    menu_option = input("=> ")
 
     if menu_option in ["1", "2"]:
         print(f"Opção [{menu_option}] selecionada com sucesso!\n")
-        break
+        ### Inserção de Dados do Usuário
+        sap_user = str(input("Digite o nome do usuário: \n"))
+        sap_password = str(input("Digite a senha: \n"))
+    
+         ## Executa a funçção de verificação da instãncia do SAP
+        session = sap_conection()
+        
+        password_reset(session, sap_user, sap_password)
+        
     else:
         print("Selecione apenas uma das opções [1] ou [2].\n")
-        
-### Inserção de Dados do Usuário
-sap_user = str(input("Digite o nome do usuário: \n"))
-sap_password = str(input("Digite a senha: \n"))
-    
-
-session = sap_conection()
-
+        break
 
 ### Executa o Script de acordo com o valor selecionado no Menu de Validação
 if menu_option == "1":
